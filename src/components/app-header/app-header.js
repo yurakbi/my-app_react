@@ -22,11 +22,11 @@ const AppHeaderBlock = styled.div `
 
 `
 
-const AppHeader = () => {
+const AppHeader = ({liked, allPosts}) => {
     return (
         <AppHeaderBlock>
             <h1>Yura Khaburskyi</h1>
-            <h2>5 записів, із них сподобалось 2</h2>
+            <h2>{allPosts} записів, із них сподобалось {liked}</h2>
         </AppHeaderBlock>
     )
 }
